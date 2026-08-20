@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="assets/img/2079859.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Nicolò Paracchini Audio Website" />
+    <title>Works - Nicolò Paracchini</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- stessi CSS custom dell'index -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // seleziona tutti i link che puntano a #contact
+        var contactLinks = document.querySelectorAll('a[href="#contact"]');
+
+        contactLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // breakpoint: sotto 768px = mobile
+                var isMobile = window.innerWidth < 768;
+
+                var targetId = isMobile ? 'contact' : 'testimonials';
+                var targetEl = document.getElementById(targetId);
+
+                if (targetEl) {
+                    targetEl.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+
+<body id="top">
+    <div class="nav-main">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html#top">
+                    <img src="assets/img/NP.png" alt="Nicolò Paracchini" style="height:50px;">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+ <div class="collapse navbar-collapse" id="navbarNav">
+
+    <ul class="navbar-nav">
+
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link active" href="works.html">
+                Works
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">
+                About Me
+            </a>
+        </li>
+
+    </ul>
+
+    <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+            </nav>
+            <!--end:Nav -->
+
+        </div>
+    </div>
+
+    <main>
+
+
+        <!--end:serviceshome -->
+        <section class="space-md d-none d-sm-block">
+            <div id="portfolio" class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                    <!--   <h2 class="colored-title"> Explore my latest works below </h2>--> 
+                        <p class="works-subtitle"> From heavy music and hip hop to immersive game audio and VR
+                            experiences </p>
+                    </div>
+                </div>
+                <div id="portfolio-filters">
+                    <ul id="filters" class="p-0">
+                        <li><a href="*" class="active">everything</a></li>
+                        <li><a href=".sound">sound engineer</a></li>
+                        <li><a href=".composer">composer</a></li>
+                        <li><a href=".game">games</a></li>
+                    </ul>
+                </div>
+
+                <div class="grid" data-cols="3" data-margin="0" data-height="1"
+                    data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/5_J-ZtFKrsI?list=RD5_J-ZtFKrsI" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/disn.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Drown in Sulphur - Strix [2026]</div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/n1lhAu9Nl44?list=RDn1lhAu9Nl44" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/meph.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Scythe of Mephisto - Till Life Do Us Part [2026]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer">
+                        <a href="https://open.spotify.com/show/1nN9cxOburHjLKCXFpbPS4" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/nsmn.jfif"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Non Succede Mai Niente - Podcast [2025]</div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/ejM8J_tb7UE" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/drown.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Drown In Sulphur - Morningstar - Drum Playthrough
+                                        [2025]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/A5WoPD1lQt0" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/tide7.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">TIDE7 - Rinse and Repeat (EP) [2025]</div>
+                                    <div class="work-entry-cat"><br>Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer">
+                        <a href="https://youtu.be/Zq-rbbRUamg?list=RDZq-rbbRUamg" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/amalekim.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Amalekim - Shir Hashirim (LP) [2025]</div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/VFoJnMoYQAk?list=RDVFoJnMoYQAk&t=0" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/morcolac2.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Morcolac - Sanguinaria (LP) [2025]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/AkaqeVI0Zf0?list=RDAkaqeVI0Zf0" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/blackraptus.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Black Raptus - Like a Sharp Blade (LP) [2024]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer game">
+                        <a href="https://store.steampowered.com/app/2587590/Iridio/" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/iridio.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Iridio [2025]</div>
+                                    <div class="work-entry-cat"><br>Game Audio, Trailers & Media</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://www.youtube.com/watch?v=l_kUo1mY84Q&list=RDl_kUo1mY84Q&start_radio=1&t=0s"
+                            target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/morcolac.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Morcolac - Drawbridge to Citadel of No More Dawn (EP)
+                                        [2024]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/Kh4g6Y_6EYM?list=RDKh4g6Y_6EYM" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/ticinum.jpg"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Ticinum - Voces Antiqui Sanguinis (EP) [2024]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry composer">
+                        <a href="https://youtu.be/NcFmt3Krqwo?list=RDNcFmt3Krqwo" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/avodah.jpg"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Amalekim - Avodah Zarah (LP) [2023]</div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer">
+                        <a href="https://youtu.be/IsVx2F4xjQ0?list=RDIsVx2F4xjQ0" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/crisalide.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Locus Animæ - Buio (LP) [2023]</div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="hhttps://youtu.be/0Zvl5Y06yoQ" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/berry2.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Berry - Diabolik ft Vacca [2023]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer game">
+                        <a href="https://store.steampowered.com/app/1709510/Remoteness/" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/remoteness2.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Remoteness [2022]</div>
+                                    <div class="work-entry-cat"><br>Game Audio, Trailers & Media</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry composer">
+                        <a href="https://youtu.be/4PZizojvogs" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/bass.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Bass Portfolio [2022]</div>
+                                    <div class="work-entry-cat"><br>Prod</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry composer">
+                        <a href="https://youtu.be/7mOl53hgV6w" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/composition.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Composer Portfolio [2022]</div>
+                                    <div class="work-entry-cat"><br>Prod</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/t3YqAaWywGQ?list=PLbCG0zw2bbi1wa0hnHxc-_wGp1qQrHXKr" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/marzo.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">S Lodios - Nel Buio [2022]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/WA8PjxqqVdE" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/subhuman.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Subhuman Hordes - Subhuman Hordes (LP) [2021]</div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/AwwqDc3jo1s" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/slakter.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Slakter - Blackened (EP) [2021]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/MUIMTwMxzig?list=RDMUIMTwMxzig" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/vacca.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Berry - Freddo ft Vacca [2021]</div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/DMK71Ni_z2k" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/mancho.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Mancho - Santo (EP) [2021]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/Cl-o4RRlAao" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/disa.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">DisaJohnny & McGala - MUS: Revolutions (LP) [2021]
+                                    </div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer">
+                        <a href="https://youtu.be/AeJcc8Mk1yo" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/argesh.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Argesh - Excommunica (LP) [2021]</div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/RKPp3krG5Cw?list=RDRKPp3krG5Cw" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/ghostly.jpg"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Ghostly Aerie Coven - Bird of Prey (LP) [2021]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/8SqLKuXcdBU?list=RD8SqLKuXcdBU" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/griverion.jpg"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Griverion - The Call Of The Noose (LP) [2021]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer">
+                        <a href="https://youtu.be/KActB0FnXj8" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/acu.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Locus Animæ - Locus Animæ Acoustic [2021]</div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer game">
+                        <a href="https://store.steampowered.com/app/1078670/Another_Dawn/" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/ad.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Another Dawn [2020]</div>
+                                    <div class="work-entry-cat"><br>Game Audio, Trailers & Media</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/HxaO9UFUwtsr" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/tia.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Cyanwood - Corri verso il Buio (LP) [2020]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/yYIWqgtL-jk" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/dios.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Losdios - La resa dei conti [2020]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/H0scRmGD6ok" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/anima.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Thiago & Berry - Anima [2020]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/YE_4XpzsRdc" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/elia.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Maxx Headroom - The Interference (EP) [2020]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer" target="_blank">
+                        <a href="https://youtu.be/JWCrMjo1rVk">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/dino.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">BrutalTechDeath Solo Project - Teaser [2020]</div>
+                                    <div class="work-entry-cat"><br>Prod, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/El-e5QRYx0s" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/5giorni.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Fudge & Maki PV - 5 Giorni (EP) [2019]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry composer">
+                        <a href="https://youtu.be/CLDyxFOdnW8" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/luna.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Locus Animae - Luna (EP) [2019]</div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/nL_ibdBlBs8?list=RDnL_ibdBlBs8" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/adversamlive.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Adversam - Defeat of Mankind (Live) [2019]</div>
+                                    <div class="work-entry-cat"><br>Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer game">
+                        <a href="https://www.meta.com/it-it/experiences/the-asylum/2955928654482306/?srsltid=AfmBOopRbWoRx9F99uJabjy96CYQonyry1T7l0fGPF2EMAS5HEmSJJzL"
+                            target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/asylum.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">The Asylum VR [2019]</div>
+                                    <div class="work-entry-cat"><br>Game Audio, Trailers & Media</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer game">
+                        <a href="https://www.meta.com/it-it/experiences/commando/2084584448328325/?srsltid=AfmBOoqCdTL8vfG4U4Ti8n-PsvpNDi8fZr9lFNXcJkNqJ-jtTNiX9Jdz"
+                            target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/commando.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Commando VR [2019]</div>
+                                    <div class="work-entry-cat"><br>Game Audio, Trailers & Media</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/6uyFVn3bE-0?list=RD6uyFVn3bE-0" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/adversam.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Adversam - The Black Diamond Gates (LP) [2019]</div>
+                                    <div class="work-entry-cat"><br>Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer">
+                        <a href="https://youtu.be/13V8bhJpWiM" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/captain.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">The Captain Goes Down With The Ship - Bass Solo [2018]
+                                    </div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="entry work-entry sound composer game">
+                        <a href="https://store.steampowered.com/app/979890/Allisons_Diary_Rebirth/?l=italian"
+                            target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/adr.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Allison's Diary: Rebirth [2018]</div>
+                                    <div class="work-entry-cat"><br>Game Audio, Trailers & Media</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <section class="main-cta">
+                        <div class="container text-center">
+                            <a href="index.html#contact" class="btn btn-main-cta">
+                                Be next on this list
+                            </a>
+                        </div>
+                        <br>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO MOBILE -->
+        <section class="space-md d-block d-sm-none">
+            <div id="portfolio-mobile" class="container">
+
+
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="colored-title">
+                            Explore my latest works below
+                        </h2>
+                        <p class="works-subtitle">
+                            From heavy music and hip hop to immersive game audio and VR experiences
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mt-4">
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer">
+                            <a href="https://open.spotify.com/show/1nN9cxOburHjLKCXFpbPS4" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/nsmn.jfif"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Non Succede Mai Niente - Podcast [2025]</div>
+                                        <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/ejM8J_tb7UE" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/drown.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Drown In Sulphur - Morningstar - Drum Playthrough
+                                            [2025]</div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/A5WoPD1lQt0" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/tide7.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">TIDE7 - Rinse and Repeat (EP) [2025]</div>
+                                        <div class="work-entry-cat"><br>Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer">
+                            <a href="https://youtu.be/Zq-rbbRUamg?list=RDZq-rbbRUamg" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/amalekim.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Amalekim - Shir Hashirim (LP) [2025]</div>
+                                        <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/VFoJnMoYQAk?list=RDVFoJnMoYQAk&t=0" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/morcolac2.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Morcolac - Sanguinaria (LP) [2025]</div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/AkaqeVI0Zf0?list=RDAkaqeVI0Zf0" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/blackraptus.png">
+                                </div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Black Raptus - Like a Sharp Blade (LP) [2024]
+                                        </div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer game">
+                            <a href="https://store.steampowered.com/app/2587590/Iridio/" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/iridio.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Iridio [2025]</div>
+                                        <div class="work-entry-cat"><br>Game Audio, Trailers & Media</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://www.youtube.com/watch?v=l_kUo1mY84Q&list=RDl_kUo1mY84Q&start_radio=1&t=0s"
+                                target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/morcolac.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Morcolac - Drawbridge to Citadel of No More Dawn
+                                            (EP) [2024]</div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/Kh4g6Y_6EYM?list=RDKh4g6Y_6EYM" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/ticinum.jpg"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Ticinum - Voces Antiqui Sanguinis (EP) [2024]
+                                        </div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry composer">
+                            <a href="https://youtu.be/NcFmt3Krqwo?list=RDNcFmt3Krqwo" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/avodah.jpg"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Amalekim - Avodah Zarah (LP) [2023]</div>
+                                        <div class="work-entry-cat"><br>Prod, Rec, Edit</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer">
+                            <a href="https://youtu.be/IsVx2F4xjQ0?list=RDIsVx2F4xjQ0" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/crisalide.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Locus Animæ - Buio (LP) [2023]</div>
+                                        <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="hhttps://youtu.be/0Zvl5Y06yoQ" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/berry2.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Berry - Diabolik ft Vacca [2023]</div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer game">
+                            <a href="https://store.steampowered.com/app/1709510/Remoteness/" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/remoteness2.png">
+                                </div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Remoteness [2022]</div>
+                                        <div class="work-entry-cat"><br>Game Audio, Trailers & Media</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry composer">
+                            <a href="https://youtu.be/4PZizojvogs" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/bass.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Bass Portfolio [2022]</div>
+                                        <div class="work-entry-cat"><br>Prod</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry composer">
+                            <a href="https://youtu.be/7mOl53hgV6w" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/composition.png">
+                                </div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Composer Portfolio [2022]</div>
+                                        <div class="work-entry-cat"><br>Prod</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/t3YqAaWywGQ?list=PLbCG0zw2bbi1wa0hnHxc-_wGp1qQrHXKr"
+                                target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/marzo.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">S Lodios - Nel Buio [2022]</div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/WA8PjxqqVdE" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/subhuman.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Subhuman Hordes - Subhuman Hordes (LP) [2021]
+                                        </div>
+                                        <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/AwwqDc3jo1s" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/slakter.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Slakter - Blackened (EP) [2021]</div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/MUIMTwMxzig?list=RDMUIMTwMxzig" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/vacca.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Berry - Freddo ft Vacca [2021]</div>
+                                        <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/DMK71Ni_z2k" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/mancho.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Mancho - Santo (EP) [2021]</div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/Cl-o4RRlAao" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/disa.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">DisaJohnny & McGala - MUS: Revolutions (LP) [2021]
+                                        </div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer">
+                            <a href="https://youtu.be/AeJcc8Mk1yo" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/argesh.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Argesh - Excommunica (LP) [2021]</div>
+                                        <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/RKPp3krG5Cw?list=RDRKPp3krG5Cw" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/ghostly.jpg"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Ghostly Aerie Coven - Bird of Prey (LP) [2021]
+                                        </div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/8SqLKuXcdBU?list=RD8SqLKuXcdBU" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/griverion.jpg"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Griverion - The Call Of The Noose (LP) [2021]
+                                        </div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer">
+                            <a href="https://youtu.be/KActB0FnXj8" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/acu.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Locus Animæ - Locus Animæ Acoustic [2021]</div>
+                                        <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer game">
+                            <a href="https://store.steampowered.com/app/1078670/Another_Dawn/" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/ad.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Another Dawn [2020]</div>
+                                        <div class="work-entry-cat"><br>Game Audio, Trailers & Media</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/HxaO9UFUwtsr" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/tia.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Cyanwood - Corri verso il Buio (LP) [2020]</div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/yYIWqgtL-jk" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/dios.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Losdios - La resa dei conti [2020]</div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/H0scRmGD6ok" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/anima.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Thiago & Berry - Anima [2020]</div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/YE_4XpzsRdc" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/elia.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Maxx Headroom - The Interference (EP) [2020]</div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer">
+                            <a href="https://youtu.be/JWCrMjo1rVk" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/dino.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">BrutalTechDeath Solo Project - Teaser [2020]</div>
+                                        <div class="work-entry-cat"><br>Prod, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/El-e5QRYx0s" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/5giorni.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Fudge & Maki PV - 5 Giorni (EP) [2019]</div>
+                                        <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry composer">
+                            <a href="https://youtu.be/CLDyxFOdnW8" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/luna.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Locus Animae - Luna (EP) [2019]</div>
+                                        <div class="work-entry-cat"><br>Prod, Rec, Edit</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/nL_ibdBlBs8?list=RDnL_ibdBlBs8" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/adversamlive.png">
+                                </div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Adversam - Defeat of Mankind (Live) [2019]</div>
+                                        <div class="work-entry-cat"><br>Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer game">
+                            <a href="https://www.meta.com/it-it/experiences/the-asylum/2955928654482306/?srsltid=AfmBOopRbWoRx9F99uJabjy96CYQonyry1T7l0fGPF2EMAS5HEmSJJzL"
+                                target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/asylum.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">The Asylum VR [2019]</div>
+                                        <div class="work-entry-cat"><br>Game Audio, Trailers & Media</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer game">
+                            <a href="https://www.meta.com/it-it/experiences/commando/2084584448328325/?srsltid=AfmBOoqCdTL8vfG4U4Ti8n-PsvpNDi8fZr9lFNXcJkNqJ-jtTNiX9Jdz"
+                                target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/commando.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Commando VR [2019]</div>
+                                        <div class="work-entry-cat"><br>Game Audio, Trailers & Media</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound">
+                            <a href="https://youtu.be/6uyFVn3bE-0?list=RD6uyFVn3bE-0" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/adversam.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Adversam - The Black Diamond Gates (LP) [2019]
+                                        </div>
+                                        <div class="work-entry-cat"><br>Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer">
+                            <a href="https://youtu.be/13V8bhJpWiM" target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/captain.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">The Captain Goes Down With The Ship - Bass Solo
+                                            [2018]</div>
+                                        <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                        <div class="entry work-entry sound composer game">
+                            <a href="https://store.steampowered.com/app/979890/Allisons_Diary_Rebirth/?l=italian"
+                                target="_blank">
+                                <div class="entry-image imageBG" data-img="./assets/img/portfolio/adr.png"></div>
+                                <div class="work-entry-hover">
+                                    <div class="work-entry-content">
+                                        <div class="work-entry-title">Allison's Diary: Rebirth [2018]</div>
+                                        <div class="work-entry-cat"><br>Game Audio, Trailers & Media</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+
+    </main>
+ <!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- COPYRIGHT -->
+
+            <div class="col-lg-4 footer-left">
+
+                <p class="footer-copy mb-0">
+                    © 2026 Nicolò Paracchini
+                </p>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="col-lg-4 footer-center">
+
+                <p class="footer-contact mb-0">
+
+                    <strong>Nicolò Paracchini</strong>
+
+                    <br>
+
+                    <a href="mailto:nicoloparacchini@gmail.com">
+                        nicoloparacchini@gmail.com
+                    </a>
+
+                    <span class="footer-separator">·</span>
+
+                    +39 392 020 6251
+
+                    <br>
+
+                    Novara, Italy
+
+                </p>
+
+            </div>
+
+
+            <!-- SOCIAL -->
+
+            <div class="col-lg-4 footer-right">
+
+                <div class="footer-social">
+
+                    <a href="https://www.instagram.com/nicolo.paracchini/"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Instagram">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+
+                    <a href="https://www.facebook.com/nicolo.paracchini"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Facebook">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/nicol%C3%B2-paracchini-90a537166/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+    <script src="assets/js/main.min.js"></script>
+
+</body>
+
+</html>

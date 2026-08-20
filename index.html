@@ -1,0 +1,2420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="assets/img/2079859.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Nicolò Paracchini Website" />
+    <title>Home - Nicolò Paracchini</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var btn = document.getElementById('show-all-portfolio');
+        if (!btn) return;
+
+        btn.addEventListener('click', function () {
+            var hiddenItems = document.querySelectorAll('#portfolio .hidden-entry');
+            hiddenItems.forEach(function (item) {
+                item.style.display = 'block';
+            });
+
+            // Se usi Masonry o simili, qui potresti dover fare un relayout
+
+            // Nascondi il bottone dopo il click
+            btn.style.display = 'none';
+        });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // seleziona tutti i link che puntano a #contact
+        var contactLinks = document.querySelectorAll('a[href="#contact"]');
+
+        contactLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // breakpoint: sotto 768px = mobile
+                var isMobile = window.innerWidth < 768;
+
+                var targetId = isMobile ? 'contact' : 'testimonials';
+                var targetEl = document.getElementById(targetId);
+
+                if (targetEl) {
+                    targetEl.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+
+<body id="top">
+    <div class="nav-main fixed-top-custom">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#top">
+                    <img src="assets/img/NP.png" alt="Nicolò Paracchini" style="height:50px;">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#top">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="works.html">Works</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Me</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--end:Nav -->
+
+        </div>
+    </div>
+
+
+    <section class="intro">
+        <div class="container">
+            <div class="row d-flex align-items-start">
+                <div class="col-md-11 d-none d-sm-block">
+                    <h1 class="display-3 nico">Nicolò Paracchini</h1>
+                    <h3 class="display-5 nico2">Audio Engineer & Technical Sound Designer</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <!-- Card 1: Music Production -->
+<div class="col-md-6 mb-4">
+    <div class="service-card">
+
+        <h4 class="colored-title">
+            Music Production · Recording · Mixing · Live Audio
+        </h4>
+
+        <p>
+            Professional audio production for bands, solo artists, podcasts
+            and live events. From recording and editing to mixing, mastering
+            and live sound, with a focus on clear, powerful and polished results.
+        </p>
+
+        <a href="#music-service"
+           class="btn btn-outline-light btn-sm mt-3 rounded-pill">
+            Explore Audio Services
+        </a>
+
+    </div>
+</div>
+
+                <!-- Card 2: Game / Media Audio -->
+<div class="col-md-6 mb-4">
+    <div class="service-card">
+
+        <h4 class="colored-title">
+            Game &amp; Media Audio · Interactive Sound
+        </h4>
+
+        <p>
+            Original sound design, music and audio implementation for games,
+            trailers and interactive media. From SFX, foley and scoring to
+            interactive audio systems, with Wwise and Unreal Engine.
+        </p>
+
+        <a href="#game-audio-service"
+           class="btn btn-outline-light btn-sm mt-3 rounded-pill">
+            Explore Game Portfolio
+        </a>
+
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="main-cta" class="main-cta menospazio3">
+        <div class="container text-center">
+            <p class="main-cta-subtitle colored-title">
+                Ready to level up your sound?
+            </p>
+            <a href="#contact" class="btn btn-main-cta">
+                Contact me
+            </a>
+        </div>
+    </section>
+
+
+    <section id="music-service" class="section-detail">
+        <div class="container">
+            <br>
+
+          <!-- Riga 1: titolo centrato -->
+<div class="row">
+    <div class="col-12 text-center">
+
+        <h2 class="colored-title">
+            Music Production, Recording, Mixing, Mastering & Live Audio
+        </h2>
+
+        <p class="works-subtitle">
+            From songwriting and recording to mixing, mastering and live sound,
+            I work across every stage of the production process.
+        </p>
+
+    </div>
+</div>
+
+
+<!-- Riga 2: testo a sinistra, carosello a destra -->
+<div class="row align-items-center mt-4 music-row">
+
+    <div class="col-lg-6 col-md-6 music-text">
+
+        <p class="mt-2">
+            <strong class="colored-microtitles">Composition & Songwriting</strong><br>
+            Original music, hooks and full instrumentals built around your ideas.
+        </p>
+
+        <p class="mt-2">
+            <strong class="colored-microtitles">Music Production & Arrangement</strong><br>
+            Turning rough demos into complete, structured productions.
+        </p>
+
+        <p class="mt-2">
+            <strong class="colored-microtitles">Recording & Editing</strong><br>
+            Professional recording, editing, vocal tuning and session cleanup.
+        </p>
+<p class="mt-2">
+    <strong class="colored-microtitles">Podcast Production</strong><br>
+    Complete podcast production including recording, editing, mixing and original music.
+</p>
+        <p class="mt-2">
+            <strong class="colored-microtitles">Mixing & Mastering</strong><br>
+Punchy, clear mixes that translate everywhere.        </p>
+
+<p class="mt-2">
+    <strong class="colored-microtitles">Live & Touring Sound</strong><br>
+FOH and monitor engineering for venues, events, bands and tours.
+</p>
+
+    </div>
+
+                <!-- Colonna carosello destra -->
+ <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center align-items-center">
+  <div class="audio-showcase-box">
+    
+<h3 class="showcase-title">
+    <span class="green-icon">🎛️</span> A/B Audio Comparison
+</h3>
+
+<p class="showcase-subtitle">
+        Select a track and switch between the starting point and final product.
+</p>
+
+<div class="track-playlist" id="track-playlist">
+  <button class="playlist-item active" onclick="loadSelectedTrack(0)">
+    <span class="track-title">Funk / Fusion Track (Live Session)</span>
+    <span class="track-tag">Live Recording & Mix</span>
+  </button>
+
+  <button class="playlist-item" onclick="loadSelectedTrack(1)">
+    <span class="track-title">Deathcore Drums Tracking</span>
+    <span class="track-tag">Rec & Mix</span>
+  </button>
+
+  <button class="playlist-item" onclick="loadSelectedTrack(2)">
+    <span class="track-title">Podcast Full Production</span>
+    <span class="track-tag">Edit, Mix, Composition</span>
+  </button>
+</div>
+
+    <!-- 2. Player Unico A/B -->
+    <div class="ab-player-container">
+      
+      <!-- Selettore A/B -->
+      <div class="ab-toggle-group">
+        <button type="button" class="ab-btn active" id="btn-a" onclick="switchTrack('A')">
+          <span class="dot"></span> A: RAW DEMO
+        </button>
+        <button type="button" class="ab-btn" id="btn-b" onclick="switchTrack('B')">
+          <span class="dot green"></span> B: FINAL MASTER
+        </button>
+      </div>
+
+      <!-- Controlli Play / Barra -->
+      <div class="player-controls">
+        <button class="play-btn" id="play-pause-btn" onclick="togglePlay()">▶</button>
+        <div class="progress-container" onclick="seek(event)">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <span class="time-display" id="time-display">0:00</span>
+      </div>
+
+
+      <!-- I due lettori audio in parallelo (nascosti) -->
+      <audio id="audio-a" preload="auto"></audio>
+      <audio id="audio-b" preload="auto"></audio>
+
+    </div>
+
+
+
+
+  </div>
+</div>
+                </div>
+            </div>
+            
+            <!-- Riga 3: CTA centrata sotto la sezione -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <section class="main-cta menospazio2">
+                        <!--   <p class="main-cta-subtitle colored-title">
+                                Want to talk about your next release?-->
+
+                        <a href="#contact" class="btn btn-main-cta">
+                            Tell me about your project
+                        </a>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+            <!-- 
+            <div class="row align-items-center mt-4 game-audio-row">
+                
+                <div class="col-lg-6 col-md-6 game-audio-text">
+
+                    <p class="mt-2">
+                        <strong class="colored-microtitles">Game sound design</strong><br>
+                        creates responsive SFX, UI and ambiences that fit your mechanics and pacing.
+                    </p>
+
+                    <p class="mt-2">
+                        <strong class="colored-microtitles">Adaptive music</strong><br>
+                        turns your soundtrack into a living score that reacts to gameplay and states.
+                    </p>
+
+                    <p class="mt-2">
+                        <strong class="colored-microtitles">Wwise implementation</strong><br>
+                        hooks your audio into the engine with events, RTPCs, states and switches.
+                    </p>
+
+                    <p class="mt-2">
+                        <strong class="colored-microtitles">Trailers &amp; linear media</strong><br>
+                        create music, sound design and editing for impactful promos and videos.
+                    </p>
+
+                    <p class="mt-2">
+                        <strong class="colored-microtitles">Audio cleanup &amp; restoration</strong><br>
+                        uses modern tools to reduce noise and artefacts, turning rough audio and dialogue recordings
+                        into something usable and intelligible.
+                    </p>
+                </div>
+
+         
+                <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+                    <div id="gameCarousel" class="carousel slide carousel-fade game-carousel" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#gameCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#gameCarousel" data-slide-to="1"></li>
+                            <li data-target="#gameCarousel" data-slide-to="2"></li>
+                            <li data-target="#gameCarousel" data-slide-to="3"></li>
+                            <li data-target="#gameCarousel" data-slide-to="4"></li>
+
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/game1.jpg" class="d-block w-100 section-image"
+                                    alt="Game Remoteness">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.krgames.it/storage/images/51/slide_1756472379_7.jpg"
+                                    class="d-block w-100 section-image" alt="Game Iridio">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://info.audiokinetic.com/hubfs/Blog_Images/2018.1/1-image2018-5-24_11-53-34.png"
+                                    class="d-block w-100 section-image" alt="Wwise Implementation">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://westenddj.co.uk/cdn/shop/files/Cubase_15_Pro_Artist_Elements_MixConsole.png?v=1762349862&width=700"
+                                    class="d-block w-100 section-image" alt="Cubase Session">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://edenjeffrey.com/wp-content/uploads/2024/01/WwiseDemo_AmbisonicAmbienceDesign-1024x551.png"
+                                    class="d-block w-100 section-image" alt="Reaper Session">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.squarespace-cdn.com/content/v1/54d696e5e4b05ca7b54cff5c/f000ad0a-3e71-4de7-91e8-4540b525a307/iZotope+RX+10+Released+Hero.jpg?format=2500w"
+                                    class="d-block w-100 section-image" alt="Audio Restoration">
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#gameCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#gameCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br>-->
+
+<section id="game-audio-service" class="section-detail">
+
+    <div class="container">
+
+        <!-- =====================================================
+             SECTION INTRO
+        ====================================================== -->
+
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 text-center">
+
+                <h2 class="colored-title">
+                Game Audio · Interactive Sound · Wwise                    
+                </h2>
+
+                <p class="works-subtitle">
+                    Selected work in game audio, sound design and interactive
+                    implementation with Wwise and Unreal Engine.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             REELS
+        ====================================================== -->
+
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-12 col-lg-10">
+
+
+                <!-- =================================================
+                     REEL 01 — UE5 + WWISE
+                ================================================== -->
+
+                <article class="portfolio-project">
+
+                    <div class="project-header mb-3">
+
+<div class="project-header mb-3">
+
+
+    <h3 class="project-title-inline">
+        <span class="colored-microtitles">Highway to Hell</span>
+        <span class="project-subtitle-inline">
+            · Original Game · Unreal Engine 5 + Wwise
+        </span>
+    </h3>
+
+</div>
+
+                    <div class="portfolio-video-wrapper">
+
+                        <video
+                            controls
+                            preload="metadata"
+                            class="portfolio-video">
+
+                            <source
+                                src="assets/video/HTH.mp4"
+                                type="video/mp4">
+
+                            Your browser does not support video playback.
+
+                        </video>
+
+                    </div>
+
+
+<div class="project-description">
+
+    <h4>
+        Interactive Audio Implementation
+    </h4>
+
+    <p class="mt-2">
+        An original horror mini-game fully developed by me in Unreal Engine 5,
+        featuring original sound design and music fully implemented through Wwise.
+        All game audio was rebuilt and integrated from scratch, with interactive,
+        environmental and gameplay-driven systems designed to create atmosphere and tension.
+    </p>
+
+<p class="project-tools">
+    <strong>Tools:</strong>
+    Unreal Engine 5 · Wwise · Cubase · Adobe Photoshop · ElevenLabs
+</p>
+
+</div>
+
+
+<!-- NEXT PROJECT -->
+
+<div class="next-project">
+
+    <a href="#reel-dying-light" aria-label="Go to next project">
+
+        <span>Next project</span>
+
+        <i class="fas fa-chevron-down"></i>
+
+    </a>
+
+</div>
+
+
+</article>
+
+
+
+<!-- =================================================
+     REEL 02 — DYING LIGHT 2
+================================================== -->
+
+<article id="reel-dying-light" class="portfolio-project">
+
+    <div class="project-header mb-3">
+
+<div class="project-header mb-3">
+
+
+<h3 class="project-title-inline">
+    <span class="colored-microtitles">Dying Light 2</span>
+    <span class="project-subtitle-inline">
+        · Complete Trailer Redesign
+    </span>
+</h3>
+
+</div>
+
+
+    <!-- VIDEO -->
+
+    <div class="portfolio-video-wrapper">
+
+        <video
+            id="video-dying-light"
+            controls
+            preload="metadata"
+            class="portfolio-video">
+
+            <source
+                src="assets/video/DL.mp4"
+                type="video/mp4">
+
+            Your browser does not support video playback.
+
+        </video>
+
+    </div>
+
+
+    <!-- =================================================
+         AUDIO CONTROLS
+    ================================================== -->
+
+    <div class="audio-panel">
+
+        <!-- STEMS -->
+
+        <div class="stem-controls">
+
+
+            <!-- MUSIC -->
+
+            <div class="stem-row">
+
+                <span class="stem-name">
+                    Music
+                </span>
+
+                <div class="stem-buttons">
+
+                    <button
+                        class="stem-btn solo-btn"
+                        onclick="soloTrack('dying-light', 'music', this)">
+                        S
+                    </button>
+
+                    <button
+                        class="stem-btn mute-btn"
+                        onclick="muteTrack('dying-light', 'music', this)">
+                        M
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SFX -->
+
+            <div class="stem-row">
+
+                <span class="stem-name">
+                    SFX
+                </span>
+
+                <div class="stem-buttons">
+
+                    <button
+                        class="stem-btn solo-btn"
+                        onclick="soloTrack('dying-light', 'sfx', this)">
+                        S
+                    </button>
+
+                    <button
+                        class="stem-btn mute-btn"
+                        onclick="muteTrack('dying-light', 'sfx', this)">
+                        M
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- VOICES -->
+
+            <div class="stem-row">
+
+                <span class="stem-name">
+                    Voices
+                </span>
+
+                <div class="stem-buttons">
+
+                    <button
+                        class="stem-btn solo-btn"
+                        onclick="soloTrack('dying-light', 'voices', this)">
+                        S
+                    </button>
+
+                    <button
+                        class="stem-btn mute-btn"
+                        onclick="muteTrack('dying-light', 'voices', this)">
+                        M
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ORIGINAL AUDIO — SECONDARY OPTION -->
+
+        <div class="original-option">
+
+            <button
+                id="original-dying-light"
+                class="original-btn"
+                onclick="toggleOriginal('dying-light')">
+
+                Compare original
+
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             AUDIO FILES
+        ================================================== -->
+
+        <audio
+            id="dying-light-music"
+            src="assets/audio/DLmusic.wav"
+            preload="auto">
+        </audio>
+
+        <audio
+            id="dying-light-sfx"
+            src="assets/audio/DLsfx.wav"
+            preload="auto">
+        </audio>
+
+        <audio
+            id="dying-light-voices"
+            src="assets/audio/DLvocals.wav"
+            preload="auto">
+        </audio>
+
+    </div>
+
+
+    <!-- =================================================
+         DESCRIPTION
+    ================================================== -->
+
+    <div class="project-description">
+
+        <h4 class="colored-microtitles">
+            Sound Redesign
+        </h4>
+
+        <p>
+            Complete audio redesign of the Dying Light 2 trailer,
+            rebuilt from scratch across 160 individual audio tracks.
+            The full redesign was mixed and organized into three main stems: Music, SFX and Voices,
+            allowing each element of the mix to be isolated or muted independently.
+            The project focuses on detailed sound design, dynamic mixing and cohesive audio direction,
+            following and enhancing the trailer’s narrative and pacing.
+        </p>
+
+<p class="project-tools">
+    <strong>Tools:</strong>
+    Cubase · Foley & Field Recording · ElevenLabs · VST Instruments · Audio Plugins
+</p>
+    </div>
+<!-- NEXT PROJECT -->
+
+<div class="next-project">
+
+    <a href="#reel-dying-light" aria-label="Go to next project">
+
+        <span>Next project</span>
+
+        <i class="fas fa-chevron-down"></i>
+
+    </a>
+
+</div>
+</article>
+
+
+
+<!-- =================================================
+     REEL 03 — RESIDENT EVIL
+================================================== -->
+
+<article id="reel-resident-evil" class="portfolio-project">
+
+    <div class="project-header mb-3">
+
+        <h3 class="project-title-inline">
+            <span class="colored-microtitles">Resident Evil Requiem</span>
+            <span class="project-subtitle-inline">
+                · Gameplay Audio Redesign
+            </span>
+        </h3>
+
+    </div>
+
+
+    <!-- VIDEO -->
+
+    <div class="portfolio-video-wrapper">
+
+        <video
+            id="video-resident-evil"
+            controls
+            preload="metadata"
+            class="portfolio-video">
+
+            <source
+                src="assets/video/RE.mp4"
+                type="video/mp4">
+
+            Your browser does not support video playback.
+
+        </video>
+
+    </div>
+
+
+    <!-- =================================================
+         AUDIO CONTROLS
+    ================================================== -->
+
+    <div class="audio-panel">
+
+        <!-- STEMS -->
+
+        <div class="stem-controls">
+
+            <!-- MUSIC -->
+
+            <div class="stem-row">
+
+                <span class="stem-name">
+                    Music
+                </span>
+
+                <div class="stem-buttons">
+
+                    <button
+                        class="stem-btn solo-btn"
+                        onclick="soloTrack('resident-evil', 'music', this)">
+                        S
+                    </button>
+
+                    <button
+                        class="stem-btn mute-btn"
+                        onclick="muteTrack('resident-evil', 'music', this)">
+                        M
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SFX -->
+
+            <div class="stem-row">
+
+                <span class="stem-name">
+                    SFX
+                </span>
+
+                <div class="stem-buttons">
+
+                    <button
+                        class="stem-btn solo-btn"
+                        onclick="soloTrack('resident-evil', 'sfx', this)">
+                        S
+                    </button>
+
+                    <button
+                        class="stem-btn mute-btn"
+                        onclick="muteTrack('resident-evil', 'sfx', this)">
+                        M
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- VOICES -->
+
+            <div class="stem-row">
+
+                <span class="stem-name">
+                    Voices
+                </span>
+
+                <div class="stem-buttons">
+
+                    <button
+                        class="stem-btn solo-btn"
+                        onclick="soloTrack('resident-evil', 'voices', this)">
+                        S
+                    </button>
+
+                    <button
+                        class="stem-btn mute-btn"
+                        onclick="muteTrack('resident-evil', 'voices', this)">
+                        M
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ORIGINAL AUDIO — SECONDARY OPTION -->
+
+        <div class="original-option">
+
+            <button
+                id="original-resident-evil"
+                class="original-btn"
+                onclick="toggleOriginal('resident-evil')">
+
+                Compare original
+
+            </button>
+
+        </div>
+
+
+        <!-- AUDIO FILES -->
+
+        <audio
+            id="resident-evil-music"
+            src="assets/audio/REmusic.wav"
+            preload="auto">
+        </audio>
+
+        <audio
+            id="resident-evil-sfx"
+            src="assets/audio/REsfx.wav"
+            preload="auto">
+        </audio>
+
+        <audio
+            id="resident-evil-voices"
+            src="assets/audio/REvocals.wav"
+            preload="auto">
+        </audio>
+
+    </div>
+
+
+    <!-- =================================================
+         DESCRIPTION
+    ================================================== -->
+
+    <div class="project-description">
+
+        <h4 class="colored-microtitles">
+            Sound Redesign
+        </h4>
+
+  <p>
+    Complete audio redesign of a Resident Evil Requiem gameplay sequence,
+    rebuilt entirely from scratch with original music, sound design,
+    SFX and voices. The mix is organized into three independent stems:
+    Music, SFX and Voices, allowing each element to be isolated or muted
+    for detailed listening, while the original audio can also be compared
+    directly.
+</p>
+
+        <p class="project-tools">
+            <strong>Tools:</strong>
+            Cubase · Foley & Field Recording · ElevenLabs · VST Instruments · Audio Plugins
+        </p>
+
+    </div>
+
+
+    <!-- NEXT PROJECT -->
+
+    <div class="next-project">
+
+        <a href="#contact" aria-label="Go to contact section">
+
+            <span>Let's work together</span>
+
+            <i class="fas fa-chevron-down"></i>
+
+        </a>
+
+    </div>
+
+</article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+const audioState = {
+
+    "dying-light": {
+
+        original: false,
+
+        music: {
+            muted: false,
+            solo: false
+        },
+
+        sfx: {
+            muted: false,
+            solo: false
+        },
+
+        voices: {
+            muted: false,
+            solo: false
+        }
+
+    },
+
+    "resident-evil": {
+
+        original: false,
+
+        music: {
+            muted: false,
+            solo: false
+        },
+
+        sfx: {
+            muted: false,
+            solo: false
+        },
+
+        voices: {
+            muted: false,
+            solo: false
+        }
+
+    }
+
+};
+
+
+/* =========================================================
+   GET AUDIO TRACKS
+========================================================= */
+
+function getTracks(project) {
+
+    return {
+
+        music: document.getElementById(project + "-music"),
+
+        sfx: document.getElementById(project + "-sfx"),
+
+        voices: document.getElementById(project + "-voices")
+
+    };
+
+}
+
+
+/* =========================================================
+   CHECK IF TRACK SHOULD PLAY
+========================================================= */
+
+function shouldPlay(project, trackName) {
+
+    const state = audioState[project];
+
+    const track = state[trackName];
+
+
+    /* Original mode */
+
+    if (state.original) {
+
+        return false;
+
+    }
+
+
+    /* Muted */
+
+    if (track.muted) {
+
+        return false;
+
+    }
+
+
+    /* Is there a solo track? */
+
+    const hasSolo =
+        state.music.solo ||
+        state.sfx.solo ||
+        state.voices.solo;
+
+
+    /* If Solo exists, ONLY solo tracks play */
+
+    if (hasSolo) {
+
+        return track.solo;
+
+    }
+
+
+    /* Otherwise all unmuted tracks play */
+
+    return true;
+
+}
+
+
+/* =========================================================
+   UPDATE MIX
+========================================================= */
+
+function updateAudio(project) {
+
+    const video =
+        document.getElementById(
+            "video-" + project
+        );
+
+    const tracks =
+        getTracks(project);
+
+
+    Object.keys(tracks).forEach(trackName => {
+
+        const audio =
+            tracks[trackName];
+
+
+        if (!audio) return;
+
+
+        if (shouldPlay(project, trackName)) {
+
+            /*
+             * Keep perfectly synchronized
+             */
+
+            audio.currentTime =
+                video.currentTime;
+
+
+            if (!video.paused) {
+
+                audio.play().catch(() => {});
+
+            }
+
+        } else {
+
+            audio.pause();
+
+        }
+
+    });
+
+}
+
+
+/* =========================================================
+   MUTE
+========================================================= */
+
+function muteTrack(project, trackName, button) {
+
+    const track =
+        audioState[project][trackName];
+
+
+    track.muted =
+        !track.muted;
+
+
+    button.classList.toggle(
+        "active",
+        track.muted
+    );
+
+
+    updateAudio(project);
+
+}
+
+
+/* =========================================================
+   SOLO
+========================================================= */
+
+function soloTrack(project, trackName, button) {
+
+    const state =
+        audioState[project];
+
+    const track =
+        state[trackName];
+
+
+    track.solo =
+        !track.solo;
+
+
+    button.classList.toggle(
+        "active",
+        track.solo
+    );
+
+
+    /*
+     * Switching back to redesign
+     * if Original was active.
+     */
+
+    if (track.solo && state.original) {
+
+        state.original = false;
+
+
+        const originalButton =
+            document.getElementById(
+                "original-" + project
+            );
+
+
+        if (originalButton) {
+
+            originalButton.classList.remove(
+                "active"
+            );
+
+        }
+
+
+        const video =
+            document.getElementById(
+                "video-" + project
+            );
+
+
+        video.muted = true;
+
+    }
+
+
+    updateAudio(project);
+
+}
+
+
+/* =========================================================
+   ORIGINAL AUDIO
+========================================================= */
+
+function toggleOriginal(project) {
+
+    const state =
+        audioState[project];
+
+    const video =
+        document.getElementById(
+            "video-" + project
+        );
+
+    const button =
+        document.getElementById(
+            "original-" + project
+        );
+
+
+    state.original =
+        !state.original;
+
+
+    if (state.original) {
+
+        /*
+         * ORIGINAL ON
+         */
+
+        video.muted = false;
+
+        button.classList.add("active");
+
+
+        /*
+         * Stop our redesign
+         */
+
+        const tracks =
+            getTracks(project);
+
+
+        Object.values(tracks).forEach(audio => {
+
+            if (audio) {
+
+                audio.pause();
+
+            }
+
+        });
+
+    }
+
+    else {
+
+        /*
+         * REDESIGN ON
+         */
+
+        video.muted = true;
+
+        button.classList.remove("active");
+
+
+        /*
+         * Resume our three stems
+         */
+
+        updateAudio(project);
+
+    }
+
+}
+
+
+/* =========================================================
+   VIDEO SYNC
+========================================================= */
+
+function setupAudioSync(project) {
+
+    const video =
+        document.getElementById(
+            "video-" + project
+        );
+
+    const tracks =
+        getTracks(project);
+
+
+    /*
+     * Original video audio is OFF
+     * when the page loads.
+     */
+
+    video.muted = true;
+
+
+    /* PLAY */
+
+    video.addEventListener("play", () => {
+
+        updateAudio(project);
+
+    });
+
+
+    /* PAUSE */
+
+    video.addEventListener("pause", () => {
+
+        Object.values(tracks).forEach(audio => {
+
+            if (audio) {
+
+                audio.pause();
+
+            }
+
+        });
+
+    });
+
+
+    /* SEEK */
+
+    video.addEventListener("seeking", () => {
+
+        Object.values(tracks).forEach(audio => {
+
+            if (audio) {
+
+                audio.currentTime =
+                    video.currentTime;
+
+            }
+
+        });
+
+    });
+
+
+    /* ENDED */
+
+    video.addEventListener("ended", () => {
+
+        Object.values(tracks).forEach(audio => {
+
+            if (audio) {
+
+                audio.pause();
+
+                audio.currentTime = 0;
+
+            }
+
+        });
+
+    });
+
+}
+
+
+/* =========================================================
+   INITIALIZE BOTH PROJECTS
+========================================================= */
+
+setupAudioSync("dying-light");
+
+setupAudioSync("resident-evil");
+
+</script>
+
+
+
+        </div>
+    </section>
+
+
+    <hr class="section-divider">
+
+
+
+    <!--end:serviceshome -->
+
+    <!-- PORTFOLIO DESKTOP/TABLET -->
+    <section class="space-md d-none d-sm-block">
+        <!-- portfolio -->
+        <div id="portfolio" class="container">
+
+            <!-- Riga 1: titolo centrato -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="colored-title">
+                        A quick taste of recent work across different categories and styles
+                    </h2>
+                    <p class="works-subtitle">
+                        For the full portfolio, visit the
+                        <a href="works.html" class="works-link">Works page</a>.
+                    </p>
+                </div>
+                <br>
+            </div>
+
+            <!-- Masonry / grid originale -->
+            <div class="grid" data-cols="3" data-margin="0" data-height="1"
+                data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
+
+                <!-- sound -->
+                <div class="entry work-entry sound composer">
+                    <a href="https://open.spotify.com/show/1nN9cxOburHjLKCXFpbPS4" target="_blank">
+                        <div class="entry-image imageBG" data-img="./assets/img/portfolio/nsmn.jfif"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">
+                                    Non Succede Mai Niente - Podcast [2025]
+                                </div>
+                                <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="entry work-entry sound composer">
+                    <a href="https://youtu.be/Zq-rbbRUamg?list=RDZq-rbbRUamg" target="_blank">
+                        <div class="entry-image imageBG" data-img="./assets/img/portfolio/amalekim.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Amalekim - Shir Hashirim (LP) [2025]</div>
+                                <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="entry work-entry sound">
+                    <a href="https://youtu.be/KB7Zkcbewgk?list=RDKB7Zkcbewgk" target="_blank">
+                                 <div class="entry-image imageBG" data-img="./assets/img/portfolio/morcolac2.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Morcolac - Sanguinaria (LP) [2025]</div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                                <div class="entry work-entry sound composer game">
+                    <a href="https://store.steampowered.com/app/2587590/Iridio/" target="_blank">
+                        <div class="entry-image imageBG" data-img="./assets/img/portfolio/iridio.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Iridio [2025]</div>
+                                <div class="work-entry-cat"><br>Game Audio, Trailers &amp; Media</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="entry work-entry sound">
+                    <a href="https://youtu.be/A5WoPD1lQt0" target="_blank">
+                        <div class="entry-image imageBG" data-img="./assets/img/portfolio/tide7.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">TIDE7 - Rinse and Repeat (EP) [2025]</div>
+                                <div class="work-entry-cat"><br>Edit, Mix, Master</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="entry work-entry sound composer game">
+                    <a href="https://store.steampowered.com/app/1709510/Remoteness/" target="_blank">
+                        <div class="entry-image imageBG" data-img="./assets/img/portfolio/remoteness2.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Remoteness [2022]</div>
+                                <div class="work-entry-cat"><br>Game Audio, Trailers &amp; Media</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="entry work-entry sound">
+                    <a href="https://youtu.be/ejM8J_tb7UE" target="_blank">
+                        <div class="entry-image imageBG" data-img="./assets/img/portfolio/drown.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">
+                                    Drown In Sulphur - Morningstar - Drum Playthrough [2025]
+                                </div>
+                                <div class="work-entry-cat"><br>Rec, Edit, Mix</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="entry work-entry sound">
+                    <a href="https://youtu.be/AwwqDc3jo1s" target="_blank">
+                        <div class="entry-image imageBG" data-img="./assets/img/portfolio/slakter.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Slakter - Blackened (EP) [2021]</div>
+                                <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="entry work-entry sound">
+                    <a href="https://youtu.be/MUIMTwMxzig?list=RDMUIMTwMxzig" target="_blank">
+                        <div class="entry-image imageBG" data-img="./assets/img/portfolio/vacca.png"></div>
+                        <div class="work-entry-hover">
+                            <div class="work-entry-content">
+                                <div class="work-entry-title">Berry - Freddo ft Vacca [2021]</div>
+                                <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <!-- /end:portfolio -->
+        </div>
+    </section>
+    <!-- PORTFOLIO MOBILE -->
+    <section class="space-md d-block d-sm-none">
+        <div id="portfolio-mobile" class="container">
+
+            <!-- Titolo riciclato -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="colored-title">
+                        A quick taste of recent work across different categories and styles
+                    </h2>
+                    <p class="works-subtitle">
+                        For the full portfolio, visit the
+                        <a href="works.html" class="works-link">Works page</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-4">
+
+                <!-- 1 -->
+                <div class="col-12 d-flex justify-content-center mb-3">
+                    <div class="entry work-entry sound composer">
+                        <a href="https://open.spotify.com/show/1nN9cxOburHjLKCXFpbPS4" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/nsmn.jfif"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">
+                                        Non Succede Mai Niente - Podcast [2025]
+                                    </div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-12 d-flex justify-content-center mb-3">
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/ejM8J_tb7UE" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/drown.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">
+                                        Drown In Sulphur - Morningstar - Drum Playthrough [2025]
+                                    </div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="col-12 d-flex justify-content-center mb-3">
+                    <div class="entry work-entry sound composer">
+                        <a href="https://youtu.be/Zq-rbbRUamg?list=RDZq-rbbRUamg" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/amalekim.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">
+                                        Amalekim - Shir Hashirim (LP) [2025]
+                                    </div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="col-12 d-flex justify-content-center mb-3">
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/AkaqeVI0Zf0?list=RDAkaqeVI0Zf0" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/blackraptus.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">
+                                        Black Raptus - Like a Sharp Blade (LP) [2024]
+                                    </div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="col-12 d-flex justify-content-center mb-3">
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/A5WoPD1lQt0" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/tide7.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">
+                                        TIDE7 - Rinse and Repeat (EP) [2025]
+                                    </div>
+                                    <div class="work-entry-cat"><br>Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="col-12 d-flex justify-content-center mb-3">
+                    <div class="entry work-entry sound composer game">
+                        <a href="https://store.steampowered.com/app/2587590/Iridio/" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/iridio.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Iridio [2025]</div>
+                                    <div class="work-entry-cat"><br>Game Audio, Trailers &amp; Media</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="col-12 d-flex justify-content-center mb-3">
+                    <div class="entry work-entry sound composer game">
+                        <a href="https://store.steampowered.com/app/1709510/Remoteness/" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/remoteness2.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">Remoteness [2022]</div>
+                                    <div class="work-entry-cat"><br>Game Audio, Trailers &amp; Media</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="col-12 d-flex justify-content-center mb-3">
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/AwwqDc3jo1s" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/slakter.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">
+                                        Slakter - Blackened (EP) [2021]
+                                    </div>
+                                    <div class="work-entry-cat"><br>Rec, Edit, Mix, Master</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="col-12 d-flex justify-content-center mb-3">
+                    <div class="entry work-entry sound">
+                        <a href="https://youtu.be/MUIMTwMxzig?list=RDMUIMTwMxzig" target="_blank">
+                            <div class="entry-image imageBG" data-img="./assets/img/portfolio/vacca.png"></div>
+                            <div class="work-entry-hover">
+                                <div class="work-entry-content">
+                                    <div class="work-entry-title">
+                                        Berry - Freddo ft Vacca [2021]
+                                    </div>
+                                    <div class="work-entry-cat"><br>Prod, Rec, Edit, Mix</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+ <section id="testimonials" class="section-detail">
+
+    <div class="container">
+
+        <!-- =================================================
+             TESTIMONIALS
+        ================================================== -->
+
+        <div class="row">
+            <div class="col-12 text-center">
+
+                <h2 class="colored-title">
+                    Feedback from artists, bands and studios
+                </h2>
+
+                <p class="works-subtitle">
+                    A snapshot of recent collaborations in the studio and in game audio.
+                </p>
+
+            </div>
+        </div>
+
+
+        <div class="row mt-4">
+
+            <div class="col-md-10 offset-md-1">
+
+                <div id="testimonialsCarousel"
+                    class="carousel slide"
+                    data-ride="carousel"
+                    data-interval="12000">
+
+                    <ol class="carousel-indicators">
+
+                        <li data-target="#testimonialsCarousel"
+                            data-slide-to="0"
+                            class="active"></li>
+
+                        <li data-target="#testimonialsCarousel"
+                            data-slide-to="1"></li>
+
+                        <li data-target="#testimonialsCarousel"
+                            data-slide-to="2"></li>
+
+                        <li data-target="#testimonialsCarousel"
+                            data-slide-to="3"></li>
+
+                        <li data-target="#testimonialsCarousel"
+                            data-slide-to="4"></li>
+
+                        <li data-target="#testimonialsCarousel"
+                            data-slide-to="5"></li>
+
+                    </ol>
+
+
+                    <div class="carousel-inner">
+
+
+                        <!-- Slide 1 -->
+
+                        <div class="carousel-item active">
+
+                            <div class="testimonial-card text-center">
+
+                                <p class="testimonial-text">
+                                    “Working with Nicolò was an excellent choice. His services offer not only
+                                    technical professionalism but also incredible creative support, shaping the song
+                                    in every aspect. His skills and creative input were essential to the Unborn
+                                    project. Highly recommended if you’re looking for quality and real production
+                                    support for your music.”
+                                </p>
+
+                                <p class="testimonial-author">
+                                    — Stefano Muccio / Unborn / Band
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Slide 2 -->
+
+                        <div class="carousel-item">
+
+                            <div class="testimonial-card text-center">
+
+                                <p class="testimonial-text">
+                                    "I worked with Nicolò Paracchini on several KR Games projects, where
+                                    he
+                                    mainly handled audio design, video and art. His contributions had a
+                                    big
+                                    impact on the overall look and feel of the games, and he
+                                    consistently
+                                    delivered solid, polished work with great attention to detail.
+                                    Nicolò is also one of those people who is a pleasure to work with:
+                                    reliable,
+                                    easy to communicate with, and always open to feedback. He brought a
+                                    positive
+                                    attitude to the team, and I will for sure work with him on future
+                                    projects."
+                                </p>
+
+                                <p class="testimonial-author">
+                                    — Roberto Comella / KR Games / Game Studio
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Slide 3 -->
+
+                        <div class="carousel-item">
+
+                            <div class="testimonial-card text-center">
+
+                                <p class="testimonial-text">
+                                    “He’s the best person I could have ever wished for to carry a project forward
+                                    with: patient, endlessly creative, and deeply human in the way he works with
+                                    others. Always available, ready to spend the whole night working if needed, and
+                                    able to solve any problem you put in front of him, no matter how complex.”
+                                </p>
+
+                                <p class="testimonial-author">
+                                    — Diego Correnti / Non Succede Mai Niente / Podcast
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Slide 4 -->
+
+                        <div class="carousel-item">
+
+                            <div class="testimonial-card text-center">
+
+                                <p class="testimonial-text">
+                                    “Orchestral arrangements with harmonically perfect writing, plus
+                                    years of
+                                    experience in project management with a strong specialization in
+                                    professional audio.”
+                                </p>
+
+                                <p class="testimonial-author">
+                                    — Alessandro di Cursi / Suicide Emotions / Band
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Slide 5 -->
+
+                        <div class="carousel-item">
+
+                            <div class="testimonial-card text-center">
+
+                                <p class="testimonial-text">
+                                    “Working with Nicolò is effortless because we lock in instantly,
+                                    and whenever I bring specific ideas he turns them into the track in
+                                    no time.
+                                    Time flies in the studio thanks to the great vibe, and in the end
+                                    the result
+                                    (whether the song gets released or not) always matches exactly what
+                                    I had
+                                    in mind before we hit record.”
+                                </p>
+
+                                <p class="testimonial-author">
+                                    — Francesco Grillo / Mancho / Artist
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Slide 6 -->
+
+                        <div class="carousel-item">
+
+                            <div class="testimonial-card text-center">
+
+                                <p class="testimonial-text">
+                                    “I’ve had the chance to work with Nicolò Paracchini on several professional
+                                    projects over the years, and every time he’s proven to be reliable, highly
+                                    skilled, and extremely detail-oriented.
+                                    His ability to really listen and offer the right guidance means you always get
+                                    the best out of a production.
+                                    What truly sets him apart from many other studios is the passion he brings to
+                                    every project: he’s not chasing the ‘theoretically perfect’ solution, but the
+                                    one that feels right and authentic for the artist’s needs, backed by years of
+                                    research and over a decade of experience in the field.”
+                                </p>
+
+                                <p class="testimonial-author">
+                                    — Axel Munoz / Subhuman Hordes / Band
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a class="carousel-control-prev"
+                        href="#testimonialsCarousel"
+                        role="button"
+                        data-slide="prev">
+
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+
+                        <span class="sr-only">
+                            Previous
+                        </span>
+
+                    </a>
+
+
+                    <a class="carousel-control-next"
+                        href="#testimonialsCarousel"
+                        role="button"
+                        data-slide="next">
+
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+
+                        <span class="sr-only">
+                            Next
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     CONTACT
+================================================== -->
+
+<section id="contact" class="pt-4">
+
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col-12 text-center mb-4">
+
+                <h2 class="colored-title finale titolocontatti">
+                    Let’s work together
+                </h2>
+
+                <p class="works-subtitle">
+                    Have a project in mind? Get in touch.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    
+
+            <!-- FORM -->
+
+            <div class="row justify-content-center">
+    <div class="col-md-7 col-lg-6">
+                <form id="contact-form"
+                    action="https://formspree.io/f/xvgqdvor"
+                    method="POST"
+                    class="contact-form">
+
+
+                    <div class="form-group">
+
+                        <input type="text"
+                            class="form-control service-card"
+                            id="name"
+                            name="name"
+                            placeholder="Name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input type="email"
+                            class="form-control service-card"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <textarea
+                            class="form-control service-card"
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Tell me about your project"
+                            required></textarea>
+
+                    </div>
+
+
+                    <div class="text-center mt-3">
+
+                        <button type="submit"
+                            class="btn btn-main-cta">
+
+                            Send Message
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <hr class="mt-5">
+
+    </div>
+
+</section>
+
+
+
+
+    </main>
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- COPYRIGHT -->
+
+            <div class="col-lg-4 footer-left">
+
+                <p class="footer-copy mb-0">
+                    © 2026 Nicolò Paracchini
+                </p>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="col-lg-4 footer-center">
+
+                <p class="footer-contact mb-0">
+
+                    <strong>Nicolò Paracchini</strong>
+
+                    <br>
+
+                    <a href="mailto:nicoloparacchini@gmail.com">
+                        nicoloparacchini@gmail.com
+                    </a>
+
+                    <span class="footer-separator">·</span>
+
+                    +39 392 020 6251
+
+                    <br>
+
+                    Novara, Italy
+
+                </p>
+
+            </div>
+
+
+            <!-- SOCIAL -->
+
+            <div class="col-lg-4 footer-right">
+
+                <div class="footer-social">
+
+                    <a href="https://www.instagram.com/nicolo.paracchini/"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Instagram">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+
+                    <a href="https://www.facebook.com/nicolo.paracchini"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Facebook">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/nicol%C3%B2-paracchini-90a537166/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+
+                        <i class="fab fa-linkedin-in"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <script src="assets/js/main.min.js"></script>
+    <script>
+        function resizeTestimonialsByLength() {
+            document.querySelectorAll('.testimonial-text').forEach(p => {
+                const text = p.textContent.trim();
+                const len = text.length;
+
+                // reset base
+                p.style.fontSize = '1.5rem';
+
+                if (len > 480) {
+                    p.style.fontSize = '1rem';
+                } else if (len > 280) {
+                    p.style.fontSize = '1.15rem';
+                } else {
+                    p.style.fontSize = '1.3rem';
+                }
+            });
+        }
+
+        window.addEventListener('load', resizeTestimonialsByLength);
+        window.addEventListener('resize', resizeTestimonialsByLength);
+
+        $('#testimonialsCarousel').on('slid.bs.carousel', resizeTestimonialsByLength);
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var testimonials = document.querySelector('#testimonialsCarousel');
+            if (!testimonials) return;
+
+            var $carousel = $('#testimonialsCarousel');
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        // se è visibile, fai ripartire lo scorrimento
+                        $carousel.carousel('cycle');
+                    } else {
+                        // se è fuori schermo, metti in pausa
+                        $carousel.carousel('pause');
+                    }
+                });
+            }, {
+                threshold: 0.3   // almeno il 30% visibile per considerarlo "in vista"
+            });
+
+            observer.observe(testimonials);
+        });
+    </script>
+
+<script>
+  // 1. ELENCO DEI TUOI BRANI CON I DOPPI AUDIO (RAW e PRO)
+  const playlist = [
+    {
+      name: "Funk/Fusion Live",
+      raw: "assets/css/audio/localzpre.mp3",
+      final: "assets/css/audio/localzpost.mp3"
+    },
+    {
+      name: "Deathcore Drums Rec+Mix",
+      raw: "assets/css/audio/drownpre.mp3",
+      final: "assets/css/audio/drownpost.mp3"
+    },
+    {
+      name: "Podcast Full Prod",
+      raw: "assets/css/audio/bordonepre.mp3",
+      final: "assets/css/audio/bordonepost.mp3"
+    }
+  ];
+
+  const audioA = document.getElementById('audio-a');
+  const audioB = document.getElementById('audio-b');
+  const playBtn = document.getElementById('play-pause-btn');
+  const progressBar = document.getElementById('progress-bar');
+  const timeDisplay = document.getElementById('time-display');
+  const btnA = document.getElementById('btn-a');
+  const btnB = document.getElementById('btn-b');
+  const slider = document.getElementById('crossfade-slider');
+  const playlistItems = document.querySelectorAll('.playlist-item');
+
+  let isPlaying = false;
+  let currentTrackIndex = 0;
+
+  // Caricamento sicuro degli elementi al caricamento della pagina
+  window.addEventListener('DOMContentLoaded', () => {
+    loadSelectedTrack(0);
+  });
+
+  function getElements() {
+    return {
+      audioA: document.getElementById('audio-a'),
+      audioB: document.getElementById('audio-b'),
+      playBtn: document.getElementById('play-pause-btn'),
+      progressBar: document.getElementById('progress-bar'),
+      timeDisplay: document.getElementById('time-display'),
+      btnA: document.getElementById('btn-a'),
+      btnB: document.getElementById('btn-b'),
+      slider: document.getElementById('crossfade-slider'),
+      playlistItems: document.querySelectorAll('.playlist-item')
+    };
+  }
+
+  function loadSelectedTrack(index) {
+    const el = getElements();
+    if (!el.audioA || !el.audioB) return;
+
+    const wasPlaying = isPlaying;
+
+    el.audioA.pause();
+    el.audioB.pause();
+
+    currentTrackIndex = index;
+
+    el.playlistItems.forEach((item, i) => {
+      if (i === index) item.classList.add('active');
+      else item.classList.remove('active');
+    });
+
+    if (playlist[index]) {
+      el.audioA.src = playlist[index].raw;
+      el.audioB.src = playlist[index].final;
+    }
+
+    el.audioA.currentTime = 0;
+    el.audioB.currentTime = 0;
+    if (el.progressBar) el.progressBar.style.width = '0%';
+    if (el.timeDisplay) el.timeDisplay.innerText = '0:00';
+
+    switchTrack('B');
+
+    if (wasPlaying) {
+      playBoth();
+    } else {
+      if (el.playBtn) el.playBtn.innerText = '▶';
+      isPlaying = false;
+    }
+  }
+
+  function playBoth() {
+    const el = getElements();
+    if (!el.audioA || !el.audioB) return;
+
+    el.audioA.currentTime = el.audioB.currentTime;
+
+    const p1 = el.audioA.play();
+    const p2 = el.audioB.play();
+
+    Promise.all([p1, p2]).then(() => {
+      isPlaying = true;
+      if (el.playBtn) el.playBtn.innerText = '⏸';
+    }).catch(err => {
+      console.error("Errore durante la riproduzione:", err);
+    });
+  }
+
+  function togglePlay() {
+    const el = getElements();
+    if (!el.audioA || !el.audioB) return;
+
+    if (isPlaying) {
+      el.audioA.pause();
+      el.audioB.pause();
+      if (el.playBtn) el.playBtn.innerText = '▶';
+      isPlaying = false;
+    } else {
+      playBoth();
+    }
+  }
+
+  function switchTrack(mode) {
+    const el = getElements();
+    if (!el.audioA || !el.audioB) return;
+
+    if (mode === 'A') {
+      el.audioA.volume = 1;
+      el.audioB.volume = 0;
+      if (el.slider) el.slider.value = 0;
+      if (el.btnA) el.btnA.classList.add('active');
+      if (el.btnB) el.btnB.classList.remove('active');
+    } else {
+      el.audioA.volume = 0;
+      el.audioB.volume = 1;
+      if (el.slider) el.slider.value = 100;
+      if (el.btnB) el.btnB.classList.add('active');
+      if (el.btnA) el.btnA.classList.remove('active');
+    }
+  }
+
+  function handleCrossfade(val) {
+    const el = getElements();
+    if (!el.audioA || !el.audioB) return;
+
+    const ratio = val / 100;
+    el.audioB.volume = ratio;
+    el.audioA.volume = 1 - ratio;
+
+    if (val < 50) {
+      if (el.btnA) el.btnA.classList.add('active');
+      if (el.btnB) el.btnB.classList.remove('active');
+    } else {
+      if (el.btnB) el.btnB.classList.add('active');
+      if (el.btnA) el.btnA.classList.remove('active');
+    }
+  }
+
+  // Sincronizzazione continua
+  document.addEventListener('DOMContentLoaded', () => {
+    const el = getElements();
+    if (el.audioB) {
+      el.audioB.ontimeupdate = () => {
+        const cur = el.audioB.currentTime;
+        const dur = el.audioB.duration;
+
+        if (dur && el.progressBar) {
+          el.progressBar.style.width = (cur / dur) * 100 + '%';
+          const mins = Math.floor(cur / 60);
+          const secs = Math.floor(cur % 60).toString().padStart(2, '0');
+          if (el.timeDisplay) el.timeDisplay.innerText = `${mins}:${secs}`;
+        }
+
+        if (el.audioA && Math.abs(el.audioA.currentTime - el.audioB.currentTime) > 0.05) {
+          el.audioA.currentTime = el.audioB.currentTime;
+        }
+      };
+    }
+  });
+
+  function seek(e) {
+    const el = getElements();
+    if (!el.audioA || !el.audioB) return;
+
+    const rect = e.currentTarget.getBoundingClientRect();
+    const pos = (e.clientX - rect.left) / rect.width;
+    if (el.audioB.duration) {
+      const seekTime = pos * el.audioB.duration;
+      el.audioA.currentTime = seekTime;
+      el.audioB.currentTime = seekTime;
+    }
+  }
+</script>
+</body>
+
+</html>
