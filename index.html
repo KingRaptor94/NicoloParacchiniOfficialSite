@@ -2447,27 +2447,50 @@ startAudioSync("resident-evil");
     }
   }
 
-  // Sincronizzazione continua
-  document.addEventListener('DOMContentLoaded', () => {
-    const el = getElements();
-    if (el.audioB) {
-      el.audioB.ontimeupdate = () => {
-        const cur = el.audioB.currentTime;
-        const dur = el.audioB.duration;
+// Sincronizzazione continua
+document.addEventListener('DOMContentLoaded', () => {
+  const el = getElements();
 
-        if (dur && el.progressBar) {
-          el.progressBar.style.width = (cur / dur) * 100 + '%';
-          const mins = Math.floor(cur / 60);
-          const secs = Math.floor(cur % 60).toString().padStart(2, '0');
-          if (el.timeDisplay) el.timeDisplay.innerText = `${mins}:${secs}`;
-        }
+  if (!el.audioA || !el.audioB) return;
 
-        if (el.audioA && Math.abs(el.audioA.currentTime - el.audioB.currentTime) > 0.05) {
-          el.audioA.currentTime = el.audioB.currentTime;
+  function syncAudio() {
+
+    if (isPlaying) {
+
+      const cur = el.audioB.currentTime;
+      const dur = el.audioB.duration;
+
+      if (dur && el.progressBar) {
+        el.progressBar.style.width = (cur / dur) * 100 + '%';
+
+        const mins = Math.floor(cur / 60);
+        const secs = Math.floor(cur % 60)
+          .toString()
+          .padStart(2, '0');
+
+        if (el.timeDisplay) {
+          el.timeDisplay.innerText = `${mins}:${secs}`;
         }
-      };
+      }
+
+      const difference =
+        Math.abs(
+          el.audioA.currentTime -
+          el.audioB.currentTime
+        );
+
+      // Corregge solo se il ritardo diventa significativo
+      if (difference > 0.08) {
+        el.audioA.currentTime = el.audioB.currentTime;
+      }
+
     }
-  });
+
+    requestAnimationFrame(syncAudio);
+  }
+
+  requestAnimationFrame(syncAudio);
+});
 
   function seek(e) {
     const el = getElements();
