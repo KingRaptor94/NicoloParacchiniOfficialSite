@@ -20353,3 +20353,7 @@ video.hide-volume::-webkit-media-controls-mute-button {
 #reel-resident-evil{
     padding-top: 20px;
 }
+
+.project-description-text {
+    color: #fff !important;
+}
