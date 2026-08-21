@@ -20349,3 +20349,7 @@ body#top .section-detail::after {
 video.hide-volume::-webkit-media-controls-mute-button {
     display: none !important;
 }
+
+#reel-resident-evil{
+    padding-top: 20px;
+}
