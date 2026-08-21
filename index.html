@@ -549,7 +549,7 @@ FOH and monitor engineering for venues, events, bands and tours.
             id="video-dying-light"
             controls
             preload="metadata"
-            class="portfolio-video hide-volume">
+   class="portfolio-video hide-volume">
 
             <source
                 src="assets/video/DL.mp4"
@@ -760,11 +760,11 @@ FOH and monitor engineering for venues, events, bands and tours.
 
     <div class="portfolio-video-wrapper">
 
-        <video
-            id="video-resident-evil"
-            controls
-            preload="metadata"
-            class="portfolio-video hide-volume">
+<video
+    id="video-resident-evil"
+    controls
+    preload="metadata"
+    class="portfolio-video hide-volume">
 
             <source
                 src="assets/video/RE.mp4"
@@ -920,11 +920,12 @@ FOH and monitor engineering for venues, events, bands and tours.
         </h4>
 
   <p>
-Complete audio redesign of a Resident Evil Requiem gameplay sequence,
-    rebuilt entirely from scratch with original music, sound design, SFX and voices.
-    Produced as a 12-hour audio redesign challenge. The mix is organized into three independent stems:
-    Music, SFX and Voices, allowing each element to be isolated or muted for detailed listening,
-    while the original audio can also be compared directly.
+    Complete audio redesign of a Resident Evil Requiem gameplay sequence,
+    rebuilt entirely from scratch with original music, sound design,
+    SFX and voices. The mix is organized into three independent stems:
+    Music, SFX and Voices, allowing each element to be isolated or muted
+    for detailed listening, while the original audio can also be compared
+    directly.
 </p>
 
         <p class="project-tools">
@@ -1017,9 +1018,7 @@ function getTracks(project) {
     return {
 
         music: document.getElementById(project + "-music"),
-
         sfx: document.getElementById(project + "-sfx"),
-
         voices: document.getElementById(project + "-voices")
 
     };
@@ -1034,27 +1033,19 @@ function getTracks(project) {
 function shouldPlay(project, trackName) {
 
     const state = audioState[project];
-
     const track = state[trackName];
-
 
     /* Original mode */
 
     if (state.original) {
-
         return false;
-
     }
-
 
     /* Muted */
 
     if (track.muted) {
-
         return false;
-
     }
-
 
     /* Is there a solo track? */
 
@@ -1063,15 +1054,11 @@ function shouldPlay(project, trackName) {
         state.sfx.solo ||
         state.voices.solo;
 
-
     /* If Solo exists, ONLY solo tracks play */
 
     if (hasSolo) {
-
         return track.solo;
-
     }
-
 
     /* Otherwise all unmuted tracks play */
 
@@ -1094,12 +1081,10 @@ function updateAudio(project) {
     const tracks =
         getTracks(project);
 
-
     Object.keys(tracks).forEach(trackName => {
 
         const audio =
             tracks[trackName];
-
 
         if (!audio) return;
 
@@ -1107,11 +1092,22 @@ function updateAudio(project) {
         if (shouldPlay(project, trackName)) {
 
             /*
-             * Keep perfectly synchronized
+             * Synchronize only if there is
+             * a meaningful difference.
              */
 
-            audio.currentTime =
-                video.currentTime;
+            const difference =
+                Math.abs(
+                    audio.currentTime -
+                    video.currentTime
+                );
+
+            if (difference > 0.08) {
+
+                audio.currentTime =
+                    video.currentTime;
+
+            }
 
 
             if (!video.paused) {
@@ -1140,16 +1136,13 @@ function muteTrack(project, trackName, button) {
     const track =
         audioState[project][trackName];
 
-
     track.muted =
         !track.muted;
-
 
     button.classList.toggle(
         "active",
         track.muted
     );
-
 
     updateAudio(project);
 
@@ -1168,10 +1161,8 @@ function soloTrack(project, trackName, button) {
     const track =
         state[trackName];
 
-
     track.solo =
         !track.solo;
-
 
     button.classList.toggle(
         "active",
@@ -1188,12 +1179,10 @@ function soloTrack(project, trackName, button) {
 
         state.original = false;
 
-
         const originalButton =
             document.getElementById(
                 "original-" + project
             );
-
 
         if (originalButton) {
 
@@ -1203,17 +1192,14 @@ function soloTrack(project, trackName, button) {
 
         }
 
-
         const video =
             document.getElementById(
                 "video-" + project
             );
 
-
         video.muted = true;
 
     }
-
 
     updateAudio(project);
 
@@ -1239,7 +1225,6 @@ function toggleOriginal(project) {
             "original-" + project
         );
 
-
     state.original =
         !state.original;
 
@@ -1261,7 +1246,6 @@ function toggleOriginal(project) {
 
         const tracks =
             getTracks(project);
-
 
         Object.values(tracks).forEach(audio => {
 
@@ -1386,16 +1370,100 @@ function setupAudioSync(project) {
 
 
 /* =========================================================
+   CONTINUOUS DRIFT CORRECTION
+========================================================= */
+
+function startAudioSync(project) {
+
+    const video =
+        document.getElementById(
+            "video-" + project
+        );
+
+    const tracks =
+        getTracks(project);
+
+
+    function sync() {
+
+        /*
+         * Only synchronize while the
+         * redesign is playing.
+         */
+
+        if (
+            !video.paused &&
+            !video.ended &&
+            !audioState[project].original
+        ) {
+
+            Object.values(tracks).forEach(audio => {
+
+                if (!audio) return;
+
+                /*
+                 * Ignore tracks that should
+                 * currently be silent.
+                 */
+
+                const trackName =
+                    Object.keys(tracks).find(
+                        key => tracks[key] === audio
+                    );
+
+                if (
+                    !trackName ||
+                    !shouldPlay(project, trackName)
+                ) {
+                    return;
+                }
+
+
+                const difference =
+                    Math.abs(
+                        audio.currentTime -
+                        video.currentTime
+                    );
+
+
+                /*
+                 * Only force a seek when
+                 * the drift is actually audible.
+                 */
+
+                if (difference > 0.08) {
+
+                    audio.currentTime =
+                        video.currentTime;
+
+                }
+
+            });
+
+        }
+
+
+        requestAnimationFrame(sync);
+
+    }
+
+
+    requestAnimationFrame(sync);
+
+}
+
+
+/* =========================================================
    INITIALIZE BOTH PROJECTS
 ========================================================= */
 
 setupAudioSync("dying-light");
-
 setupAudioSync("resident-evil");
 
+startAudioSync("dying-light");
+startAudioSync("resident-evil");
+
 </script>
-
-
 
         </div>
     </section>
@@ -2051,7 +2119,7 @@ setupAudioSync("resident-evil");
 
 
                     <div class="text-center mt-3">
-                      <br>
+<br>
                         <button type="submit"
                             class="btn btn-main-cta">
 
@@ -2096,7 +2164,7 @@ setupAudioSync("resident-evil");
             <div class="col-lg-4 footer-left">
 
                 <p class="footer-copy mb-0">
-© 2026 Nicolò Paracchini · P.IVA 02855100034
+                    © 2026 Nicolò Paracchini · P.IVA 02855100034
                 </p>
 
             </div>
