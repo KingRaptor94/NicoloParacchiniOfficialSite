@@ -20346,4 +20346,6 @@ body#top .section-detail::after {
     margin-top: 0 !important;
 
 }
-
+video.hide-volume::-webkit-media-controls-mute-button {
+    display: none !important;
+}
