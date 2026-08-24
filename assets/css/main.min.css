@@ -18577,36 +18577,14 @@ footer {
 .nico {
   color: #5cb00c;  /* Il tuo verde pieno all'interno */
   
-  /* Crea una sagoma nera solida spingendo l'ombra in tutte le direzioni esterne */
-  text-shadow: 
-    -2px -2px 0 #000000, /* Alto Sinistra */
-     2px -2px 0 #000000, /* Alto Destra */
-    -2px  2px 0 #000000, /* Basso Sinistra */
-     2px  2px 0 #000000, /* Basso Destra */
-     
-     /* Ombre mediane per coprire i buchi negli angoli tondi */
-     0px -2px 0 #000000, /* Alto */
-     0px  2px 0 #000000, /* Basso */
-    -2px  0px 0 #000000, /* Sinistra */
-     2px  0px 0 #000000; /* Destra */
+
 
   font-weight: bold; /* Consigliato per rendere il testo solido e il bordo definito */
 }
 
 .nico2 {
   
-  /* Crea una sagoma nera solida spingendo l'ombra in tutte le direzioni esterne */
-  text-shadow: 
-    -2px -2px 0 #000000, /* Alto Sinistra */
-     2px -2px 0 #000000, /* Alto Destra */
-    -2px  2px 0 #000000, /* Basso Sinistra */
-     2px  2px 0 #000000, /* Basso Destra */
-     
-     /* Ombre mediane per coprire i buchi negli angoli tondi */
-     0px -2px 0 #000000, /* Alto */
-     0px  2px 0 #000000, /* Basso */
-    -2px  0px 0 #000000, /* Sinistra */
-     2px  0px 0 #000000; /* Destra */
+
 
   font-weight: bold; /* Consigliato per rendere il testo solido e il bordo definito */
 }
