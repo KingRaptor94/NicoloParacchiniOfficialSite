@@ -18576,6 +18576,19 @@ footer {
 
 .nico {
   color: #5cb00c;  /* Il tuo verde pieno all'interno */
+
+    /* Crea una sagoma nera solida spingendo l'ombra in tutte le direzioni esterne */
+  text-shadow: 
+    -1px -1px 0 #000000, /* Alto Sinistra */
+     1px -1px 0 #000000, /* Alto Destra */
+    -1px  1px 0 #000000, /* Basso Sinistra */
+     1px  1px 0 #000000, /* Basso Destra */
+     
+     /* Ombre mediane per coprire i buchi negli angoli tondi */
+     0px -1px 0 #000000, /* Alto */
+     0px  1px 0 #000000, /* Basso */
+    -1px  0px 0 #000000, /* Sinistra */
+     1px  0px 0 #000000; /* Destra */
   
 
 
